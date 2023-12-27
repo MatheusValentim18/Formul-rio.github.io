@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Conhecimento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário de Conhecimento</h1>
+    </header>
+    <section>
+        <div id="pergunta1">
+            <h2>Qual seu nível de conhecimento na área?</h2>
+            <input class="form" type="radio" name="flexRadioDefault1" id="A1"> Iniciante<br>
+            <input class="form" type="radio" name="flexRadioDefault1" id="B1"> Intermediário<br>
+            <input class="form" type="radio" name="flexRadioDefault1" id="C1"> Avançado
+            <br>
+            <input type="button" value="Responder" class="botao" onclick="Pergunta1()">
+        </div>
+
+        <div id="pergunta2" style="display: none;">
+            <h2>Qual área você deseja seguir?</h2>
+            <input class="form" type="radio" name="flexRadioDefault2" id="A2"> Back-End<br>
+            <input class="form" type="radio" name="flexRadioDefault2" id="B2"> Front-End<br>
+            <input class="form" type="radio" name="flexRadioDefault2" id="C2"> Full-Stack
+            <br>
+            <input type="button" value="Responder" class="botao" onclick="Pergunta2()">
+        </div>
+
+        <div id="pergunta3back" style="display: none;">
+            <h2>Em Back-End, qual linguagem você prefere?</h2>
+            <input class="form" type="radio" name="flexRadioDefault3" id="A3"> JavaScript<br>
+            <input class="form" type="radio" name="flexRadioDefault3" id="B3"> Python<br>
+            <input class="form" type="radio" name="flexRadioDefault3" id="C3"> Java
+            <br>
+            <input type="button" value="Responder" class="botao" onclick="Pergunta3()">
+        </div>
+
+        <div id="pergunta4front" style="display: none;">
+            <h2>Em Front-End, qual linguagem você prefere?</h2>
+            <input class="form" type="radio" name="flexRadioDefault4" id="A4"> JavaScript e HTML<br>
+            <input class="form" type="radio" name="flexRadioDefault4" id="B4"> CSS<br>
+            <input class="form" type="radio" name="flexRadioDefault4" id="C4"> Python
+            <br>
+            <input type="button" value="Responder" class="botao" onclick="Pergunta4()">
+        </div>
+
+        <div id="pergunta5full" style="display: none;">
+            <h2>Em Full-Stack, qual linguagem você prefere?</h2>
+            <input class="form" type="radio" name="flexRadioDefault5" id="A5"> JavaScript<br>
+            <input class="form" type="radio" name="flexRadioDefault5" id="B5"> SQL<br>
+            <input class="form" type="radio" name="flexRadioDefault5" id="C5"> HTML e CSS
+            <br>
+            <input type="button" value="Responder" class="botao" onclick="Pergunta5()">
+        </div>
+        
+        <div id="pergunta6" style="display: none;">
+            <h2>Além das linguagens mencionadas, você tem interesse em aprender outras tecnologias específicas?</h2>
+            <input class="form" type="radio" name="outrasTecnologias" id="A6"> Sim<br>
+            <input class="form" type="radio" name="outrasTecnologias" id="B6"> Não<br>
+            <br>
+            <input type="button" value="Responder" class="botao" onclick="Pergunta6()">
+        </div>
+    </section>
+        
+    <script src="Respostas_script.js"></script>
+</body>
+</html>
